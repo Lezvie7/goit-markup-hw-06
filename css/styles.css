@@ -184,7 +184,6 @@ li {
   align-items: center;
   /* padding для кликабельности */
   fill: currentColor;
-  /* transition: var(--transition-dur-and-func); */
   transition: color var(--transition-dur-and-func);
 }
 
@@ -352,6 +351,7 @@ li {
   border: 1px solid var(--contact-form-input-border);
   border-radius: 4px;
   padding-left: 42px;
+  transition: var(--transition-dur-and-func);
 }
 
 .contact-form-input:hover,
@@ -368,11 +368,16 @@ li {
 .contact-form-massage {
   width: 100%;
   height: 120px;
-  left: 576px;
-  top: 518px;
   resize: none;
   border: 1px solid var(--contact-form-input-border);
   border-radius: 4px;
+  transition: var(--transition-dur-and-func);
+}
+
+.contact-form-massage:hover,
+.contact-form-massage:focus {
+  outline: none;
+  border-color: var(--current-color);
 }
 
 .contact-form-btn {
@@ -387,6 +392,7 @@ li {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: var(--transition-dur-and-func);
 }
 
 .modal-form-icon {
