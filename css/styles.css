@@ -442,7 +442,43 @@ li {
   color: var(--secondary-color);
 }
 
-.form-comment {
+.form-checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--complementary-2-color);
+  /* border: 0.2px solid #ffffff; */
+  /* background: #2196f3; */
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 9px;
+}
+
+.form-checkbox-won-icon {
+  display: none;
+  fill: var(--main-light-color);
+}
+
+.contact-form-check:checked + .form-checkbox-icon {
+  background-color: var(--current-color);
+  border: var(--current-color);
+}
+
+.contact-form-check:checked + .form-checkbox-icon > .form-checkbox-won-icon {
+  display: block;
+}
+
+.contact-form-check:focus + .form-checkbox-icon {
+  box-shadow: 0 0 0 2px var(--current-color);
+}
+
+.form-checkbox-link {
+  color: var(--current-color);
+  text-decoration-line: underline;
+}
+
+.contact-form-check-field {
+  display: flex;
+  align-items: center;
 }
 
 /* Модалка по клику на кнопку Героя */

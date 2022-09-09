@@ -513,8 +513,19 @@
             ></textarea>
           </label>
           <label class="contact-form-check-field">
-            <input class="contact-form-check" required name="user_policy" type="checkbox" />
-            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+            <input
+              class="contact-form-check visually-hidden"
+              required
+              name="user_policy"
+              type="checkbox"
+            />
+            <svg class="form-checkbox-icon">
+              <use
+                class="form-checkbox-won-icon"
+                href="./images/sprite.svg#icon-form-checkbox"
+              ></use>
+            </svg class="">
+            Погоджуюся з розсилкою та приймаю&nbsp;<a class="form-checkbox-link" href="">Умови договору</a>
           </label>
 
           <button class="contact-form-btn" type="submit">Відправити</button>
