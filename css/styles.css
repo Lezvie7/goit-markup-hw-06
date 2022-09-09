@@ -28,6 +28,7 @@
   --shadow-cards-gallery-16: rgba(0, 0, 0, 0.16);
   --contact-form-input-border: rgba(33, 33, 33, 0.2);
   --gallery-overley-text: rgba(33, 150, 243, 0.9);
+  --form-massage-placeholder: rgba(117, 117, 117, 0.5);
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -279,7 +280,7 @@ li {
   box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
   padding: 10px 32px;
   border: none;
-  transition: color var(--transition-dur-and-func);
+  transition: var(--transition-dur-and-func);
 }
 
 /* Модалка по клику на кнопку Героя */
@@ -317,6 +318,12 @@ li {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
+  transition: var(--transition-dur-and-func);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--current-color);
 }
 
 .backdrop.is-hidden {
@@ -371,7 +378,15 @@ li {
   resize: none;
   border: 1px solid var(--contact-form-input-border);
   border-radius: 4px;
+  margin-bottom: 20px;
   transition: var(--transition-dur-and-func);
+}
+
+.contact-form-massage::placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--form-massage-placeholder);
 }
 
 .contact-form-massage:hover,
@@ -381,8 +396,23 @@ li {
 }
 
 .contact-form-btn {
-  display: flex;
-  justify-content: center;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+  border-radius: 4px;
+  padding: 10px 52px;
+  transition: var(--transition-dur-and-func);
+}
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+  background-color: var(--button-hero-bg-color);
+  box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
+  border-radius: 4px;
 }
 
 .modal-form-input-icon {
