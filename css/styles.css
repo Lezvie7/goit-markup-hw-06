@@ -361,13 +361,13 @@ li {
   transition: var(--transition-dur-and-func);
 }
 
-.contact-form-input:hover,
+/* .contact-form-input:hover, */
 .contact-form-input:focus {
   outline: none;
   border-color: var(--current-color);
 }
 
-.contact-form-input:hover + .modal-form-input-icon,
+/* .contact-form-input:hover + .modal-form-input-icon, */
 .contact-form-input:focus + .modal-form-input-icon {
   fill: var(--current-color);
 }
@@ -390,7 +390,7 @@ li {
   color: var(--form-massage-placeholder);
 }
 
-.contact-form-massage:hover,
+/* .contact-form-massage:hover, */
 .contact-form-massage:focus {
   outline: none;
   border-color: var(--current-color);
