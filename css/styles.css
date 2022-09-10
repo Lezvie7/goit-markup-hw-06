@@ -362,7 +362,8 @@ li {
 }
 
 /* .contact-form-input:hover, */
-.contact-form-input:focus {
+.contact-form-input:focus,
+.footer-submit:focus {
   outline: none;
   border-color: var(--current-color);
 }
@@ -994,8 +995,7 @@ li {
   font-size: 16px;
   line-height: 1.25;
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-dur-and-func);
 }
 
 .footer-submit-btn {
